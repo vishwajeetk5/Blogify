@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Blog it!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b8044e56f8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Spirax&display=swap" rel="stylesheet">
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        .navbar {
+            background: #424769;
+        }
+
+        footer {
+            font-size: large;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 100%;
+            position: absolute;
+            bottom: 0px;
+        }
+
+        .navbar-brand {
+            font-family: 'Marck Script', cursive;
+            font-size: 2.5rem;
+        }
+a{
+    text-decoration: none;
+}
+        main {
+            background: #e4f1e3;
+            max-width: 70%;
+            display: grid;
+            place-items: center;
+            border: 2px grey solid;
+            border-radius: 15px;
+        }
+
+        #quote {
+            max-width: 700px;
+            font-family: comic;
+            text-align: center;
+        }
+
+        #write {
+            max-width: 600px;
+        }
+#showall-body{
+    width:85%;
+}
+        svg {
+            z-index: -2;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Blogit!</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="/write"><i class="fa-solid fa-pen"> Write</i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/showall"><i class="fa-solid fa-book"> Show all</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>

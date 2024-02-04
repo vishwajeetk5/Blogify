@@ -1,0 +1,32 @@
+<button type="button" class="btn btn-outline-info flex-d align-items-center">
+    <a href="/write">
+        <span class="material-symbols-outlined">add_circle</span>
+         Add new</a>
+</button>
+<br>
+<div id="showall-body" class="p-4">
+    <%if(locals.mydb){ mydb.forEach((item)=>{ %>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <%= item.tit %>
+
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+                    <div class="accordion-body">
+                        <%= item.cont %>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <br>
+        <% })} else if(locals.flag==0){%>
+            <h3>Nothing to show</h3>
+            <% } %>
+
+</div>
