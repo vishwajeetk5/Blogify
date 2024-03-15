@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extendedd: true }));
 
 const db = [];
 app.get('', (req, res) => {
-
     res.render('index.ejs');
 })
 
