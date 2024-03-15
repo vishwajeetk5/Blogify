@@ -30,6 +30,6 @@ app.get('/showall', (req, res) => {
 })
 
 app.listen(3000, () => {
-    console.log("listening on 3000 port");
+    console.log("listening on http://localhost:3000/");
 })
 
