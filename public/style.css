@@ -1,54 +1,115 @@
-
+html,
 body {
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
-
 .navbar {
-    background: #424769;
-}
-
-footer {
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    width: 100%;
-    position: absolute;
-    bottom: 0px;
-    position: fixed;
+  background: #424769;
 }
 
 .navbar-brand {
-    font-family: 'Marck Script', cursive;
-    font-size: 2.5rem;
+  font-family: "Marck Script", cursive;
+  font-size: 2.5rem;
 }
-a{
-text-decoration: none;
+.nav-link {
+  font-family: cursive;
 }
+
+a {
+  text-decoration: none;
+}
+
 main {
-    background: #e4f1e3;
-    max-width: 70%;
-    display: grid;
-    place-items: center;
-    border: 2px grey solid;
-    border-radius: 15px;
+  background: #ffffff;
+  max-width: 650px !important;
+  display: grid;
+  place-items: center;
+  border: 2px grey solid;
+  border-radius: 15px;
+  clear: both;
 }
 
+.posts {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: justify;
+}
+button {
+  background: #fbca1f;
+  padding: 0.6em 1.3em;
+  font-weight: 400;
+  font-size: 14px;
+  border: 1px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.2em 0.2em;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+button:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+#special,
+form {
+  background-color: white;
+  /* background: rgba( 255, 255, 255, 0.5 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 10.5px );
+-webkit-backdrop-filter: blur( 10.5px ); */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 2px solid black;
+  border-radius: 10px;
+  max-width: 650px !important;
+}
+form,
+input {
+  width: 100%;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 15px;
+  margin-top: 15px;
+  box-shadow: #cff0ff 0px 10px 10px -5px;
+  border-inline: 2px solid transparent;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input,
+textarea {
+  border: 1px solid rgb(135, 131, 131) !important;
+}
 #quote {
-    max-width: 700px;
-    font-family: comic;
-    text-align: center;
+  max-width: 700px;
+  font-family: comic;
+  text-align: center;
 }
 
-#write {
-    max-width: 600px;
-}
-#showall-body{
-width:85%;
-}
 svg {
-    z-index: -2;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
+  z-index: -2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+.spacer {
+  height: 70px;
+}
+
+footer {
+  position: fixed;
+  font-size: large;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+  bottom: 0;
+  height: 60px;
 }
