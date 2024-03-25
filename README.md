@@ -28,7 +28,10 @@ Blogify is a blog application built using Node.js and Express.js on the server-s
 6. Access the application at: `http://localhost:3000`
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/90624a0b-e3e5-4dda-b56d-ee1a00075aab)
+![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/d63b2d5b-2653-4df7-9aa5-21f9eba8c6d4)
+![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/3a108d5c-bca1-4180-b72e-fd0c5eaf4dcd)
+
 
 
 ## Concepts Learned
