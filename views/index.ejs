@@ -22,8 +22,10 @@
                 <%=post.content%>
               </p>
               <small>By: <%=post.author%> </small>
-              <a class="edit" href="/edit/<%= post.id %>"><button class="bg-info py-2"><i class="fa-regular fa-pen-to-square"></i> Edit</button></a>
-              <a class="delete" href="/api/posts/delete/<%= post.id %>"><button class="bg-danger py-2"><i class="fa-solid fa-trash-can"></i> Delete</button></a>
+              <br>
+              <small>post._id <%= post._id %></small>
+              <a class="edit" href="/edit/<%= post._id %>"><button class="bg-info py-2"><i class="fa-regular fa-pen-to-square"></i> Edit</button></a>
+              <a class="delete" href="/api/posts/<%= post._id %>"><button class="bg-danger py-2"><i class="fa-solid fa-trash-can"></i> Delete</button></a>
             </li>
             <% }); %>
         </ul>

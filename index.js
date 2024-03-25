@@ -31,7 +31,6 @@ app.get("/new", (req, res) => {
 app.get("/edit/:id", async (req, res) => {
   try {
     const response = await axios.get(`${API_URL}/posts/${req.params.id}`);
-    console.log(response.data);
     res.render("modify.ejs", {
       heading: "Edit Post",
       submit: "Update Post",
@@ -53,7 +52,7 @@ app.post("/api/posts", async (req, res) => {
   }
 });
 
-// After the user update post, the server calls the API server toPartially update a post
+// After the user update post, the server calls the API server to Partially update a post
 app.post("/api/posts/:id", async (req, res) => {
   console.log("called");
   try {
@@ -69,7 +68,7 @@ app.post("/api/posts/:id", async (req, res) => {
 });
 
 // Delete a post
-app.get("/api/posts/delete/:id", async (req, res) => {
+app.get("/api/posts/:id", async (req, res) => {
   try {
     await axios.delete(`${API_URL}/posts/${req.params.id}`);
     res.redirect("/");
