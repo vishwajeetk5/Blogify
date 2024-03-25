@@ -1,12 +1,12 @@
-
 # Blogify!
 
 Blogify is a dynamic blog application built with Node.js, Express.js, MongoDB, and EJS.
---Node.js serves as the runtime environment, handling server-side logic and routing,
---while Express.js acts as a web application framework, simplifying route definition and request handling. 
---MongoDB functions as the database management system, storing and managing blog post data efficiently.
---EJS (Embedded JavaScript) serves as the templating engine, enabling dynamic rendering of HTML content on the server-side.
---Additionally, Bootstrap is utilized for frontend design, providing pre-designed CSS and JavaScript components for a visually appealing and user-friendly interface
+
+- Node.js serves as the runtime environment, handling server-side logic and routing,
+- Express.js acts as a web application framework, simplifying route definition and request handling. 
+- MongoDB as the DBMS.
+- EJS (Embedded JavaScript) serves as the templating engine.
+- Additionally, Bootstrap is utilized for frontend design, providing pre-designed CSS and JavaScript components for a visually appealing and user-friendly interface
 
 
 ## Tech Stack
@@ -20,9 +20,15 @@ Blogify is a dynamic blog application built with Node.js, Express.js, MongoDB, a
 **Dependency:** Axios: Promise-based HTTP client for the browser and Node.js
 
 ## Database Configuration
-1.Connect to MongoDB: `mongo`
-2.Create a Database: `use mydb`
-3.Create Collection: `db.createCollection('blog')`
+
+1.**Ensure MongoDB is Running**: Before executing any MongoDB commands, ensure that MongoDB is running on your local machine or server. Start MongoDB:
+   `mongod`
+   
+2.**Connect to MongoDB**: `mongo`
+
+3.**Create a Database**: `use mydb`
+
+4.**Create Collection**: `db.createCollection('blog')`
 
 ## Run Locally
 
@@ -31,10 +37,10 @@ Blogify is a dynamic blog application built with Node.js, Express.js, MongoDB, a
   git clone https://github.com/vishwajeetk5/Blogify.git
 ```
 2. Go to the project directory: `cd Blogify`
-3. Install dependencies: `npm install`
+3. Install dependencies:        `npm install`
 5. Start the custom API server: `node api.js`
-6. Then start Backend server: `node index.js`
-7. Access the application at: `http://localhost:3000`
+6. Then start Backend server:   `node index.js`
+7. Access the application at:   `http://localhost:3000`
 
 ## Screenshots
 
@@ -50,5 +56,11 @@ Blogify is a dynamic blog application built with Node.js, Express.js, MongoDB, a
 - Using Postman for API testing
 - Server-side templating with EJS
 - Frontend-backend integration
-[![Node.js Version](https://img.shields.io/node/v/express)](https://nodejs.org/)
-[![npm Version](https://img.shields.io/npm/v/npm)](https://www.npmjs.com/)
+
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+![ChatGPT](https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white)
