@@ -52,9 +52,41 @@ app.post("/api/posts", async (req, res) => {
   }
 });
 
-// After the user update post, the server calls the API server to Partially update a post
+// After the user updates a post, the server calls the API server to partially update a post
 app.post("/api/posts/:id", async (req, res) => {
-  console.log("called");
+  try {
+    console.log(req.params.id+" is here to edit with patch from index t api")
+    const response = await axios.patch(
+      `${API_URL}/posts/${req.params.id}`,
+      req.body
+    );
+
+    console.log(response.data)
+    res.redirect("/");
+  } catch (error) {
+    res.status(500).json({ message: "Error updating post" });
+  }
+});
+
+// These routes are meant for use with API testing tools or client-side JavaScript
+// They are not directly accessible from HTML forms
+app.put("/api/posts/:id", async (req, res) => {
+  try {
+    console.log(req.params.id+" is here to edit with put")
+    const response = await axios.put(
+      `${API_URL}/posts/${req.params.id}`,
+      req.body
+    );
+    console.log(response.data);
+    res.redirect("/");
+  } catch (error) {
+    res.status(500).json({ message: "Error updating post" });
+  }
+});
+
+// These routes are meant for use with API testing tools or client-side JavaScript
+// They are not directly accessible from HTML forms
+app.patch("/api/posts/:id", async (req, res) => {
   try {
     const response = await axios.patch(
       `${API_URL}/posts/${req.params.id}`,
@@ -66,6 +98,7 @@ app.post("/api/posts/:id", async (req, res) => {
     res.status(500).json({ message: "Error updating post" });
   }
 });
+
 
 // Delete a post
 app.get("/api/posts/:id", async (req, res) => {
