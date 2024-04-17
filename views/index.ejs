@@ -101,7 +101,7 @@
       });
     };
 
-    searchInput.addEventListener('input', async () => {
+    const handleSearch = async () => {
       const keyword = searchInput.value.trim();
       if (keyword) {
         await fetchSearchResults(keyword);
@@ -111,7 +111,12 @@
         const highlights = document.querySelectorAll('.highlight');
         highlights.forEach(highlight => highlight.replaceWith(highlight.textContent));
       }
-    });
+    };
+
+    searchInput.addEventListener('input',handleSearch);
+    
+    // searchInput.addEventListener('touchstart',handleSearch);
+
   });
 </script>
 
