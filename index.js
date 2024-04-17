@@ -53,6 +53,7 @@ app.post("/api/posts", async (req, res) => {
 });
 
 // After the user updates a post, the server calls the API server to partially update a post
+
 app.post("/api/posts/:id", async (req, res) => {
   try {
     console.log(req.params.id+" is here to edit with patch from index t api")
