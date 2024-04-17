@@ -7,9 +7,9 @@
   <% if (locals.post) { %>
     <!-- HTML Only supports 'GET' and 'POST' request -->
     <form class="p-4 m-2" method="post" action="/api/posts/<%=post._id%>">
-
+      <input type="text" class="form-control m-2" name="title" value="<%=post.title %>">
       <textarea name="content" class="form-control m-2" rows="10"><%=post.content %></textarea>
-
+      <input type="text" class="form-control m-2" name="author" value="<%=post.author %>">
       <button class="btn btn-info" type="submit">
         <%= submit %>
       </button>
