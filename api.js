@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import blog from "./mongodb.js";
 import {ObjectId} from 'mongodb'
+import cors from "cors";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -9,6 +10,7 @@ const PORT = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(express.static("public"));
+app.use(cors());
 
 //GET all posts
 app.get("/posts", async (req, res) => {
@@ -35,6 +37,19 @@ app.get("/posts/:id", async (req, res) => {
     res.status(500).json({ error: "Internal Server Error" });
   }
 });
+//Search in content with keyword
+app.get("/search/:key",async (req,res)=>{
+  try{
+    let key = req.params.key;
+   const posts = await blog.find({ content: { $regex: new RegExp(key, "i") } })
+   console.log(`${posts.length} search results for '${key}'`)
+   res.json({"searchResult":posts.length,"foundin":posts})
+  }
+  catch(error){
+    console.error("Unable to search", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+})
 //POST a new Post
 app.post("/posts", async (req, res) => {
   try {
