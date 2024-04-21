@@ -43,10 +43,13 @@ Mongoose:Object Data Modeling (ODM) library for MongoDB and Node.js,provides abs
 7. Access the application at:   `http://localhost:3000`
 
 ## Screenshots
-
+Home Page with recent posts
 ![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/527af77f-5007-4e8e-bdad-7086959d1355)
+New Post page
 ![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/d63b2d5b-2653-4df7-9aa5-21f9eba8c6d4)
+Edit Post page
 ![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/3a108d5c-bca1-4180-b72e-fd0c5eaf4dcd)
+Search and highlight through keyword
 ![image](https://github.com/vishwajeetk5/Blogify/assets/119106702/4041bc7a-b086-418f-8207-0f02b9837ba3)
 
 
