@@ -61,6 +61,7 @@ Search and highlight through keyword
 - Using Postman for API testing
 - Server-side templating with EJS
 - Frontend-backend integration
+- [Background Blob animation using Illustrator,SVG](https://dev.to/uuuuuulala/making-background-blob-animation-in-just-15kb-step-by-step-guide-2482)
 
 ## Mistakes Made
 - HTML Never HTML forms do not support methods other than 'GET' and 'POST'
