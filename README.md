@@ -10,7 +10,7 @@ Blogify is a dynamic blog application built with Node.js, Express.js, MongoDB, a
 
 ## Tech Stack
 
-**Client:** EJS,Bootstrap
+**Client:** Reactjs,Bootstrap
 
 **Server:** Node.js, Express.js,RESTful API
 
